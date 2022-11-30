@@ -1,14 +1,23 @@
 # table-new
 
-This template should help get you started developing with Vue 3 in Vite.
+This contains 2 tables
 
-## Recommended IDE Setup
+Table 1 with paginated data, 2 data/page since there were only 10 data from the API
+Table 2 shows the search results
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+##Requested feature implementations:
 
-## Customize configuration
+1. Parent-child communication
+Main table container to table 1 and table 2.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+2. Child Parent Communication
+Table 1 emits data to main table when the pagination is done.
+
+3. Child Child Communication
+Used mitt to emit events from one table to another. Since, I was using Vue3 and to support eventBus in this version I would have to resort to hackey ways, so used mitt instead since it's recommended to use with Vue3.
+
+4. Vuex
+Since I am using Vue3, I used Pinia instead of Vuex. Pinia was used to store search results in the store.
 
 ## Project Setup
 
@@ -20,10 +29,4 @@ npm install
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
