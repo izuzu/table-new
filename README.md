@@ -5,7 +5,7 @@ This contains 2 tables
 Table 1 with paginated data, 2 data/page since there were only 10 data from the API
 Table 2 shows the search results
 
-##Requested feature implementations:
+## Requested feature implementations:
 
 1. Parent-child communication
 Main table container to table 1 and table 2.
