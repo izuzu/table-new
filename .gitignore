@@ -19,15 +19,5 @@ yarn-error.log*
 *.sln
 *.sw*
 
-gitlabs.pub
-gitlabs
-
 # Log files
 .log/
-
-# Editor directories and files
-*.sw?
-/src/story_player/dist/
-
-.vercel
-*.log
